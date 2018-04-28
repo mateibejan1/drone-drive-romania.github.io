@@ -1,0 +1,333 @@
+#butt{
+    position:relative;
+    background-color: darkslategray;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    width: 10%;
+    left: 80%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#butt:hover{
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+#titel1{
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    font-family: 'Indie Flower';
+}
+
+#txt4{
+    box-sizing: border-box;
+    width: 80vw;
+}
+
+#divstyle1{padding-top:0.5%;padding-bottom:0.5%;border-top-color:darkslategray;border-top-style:solid;border-bottom-color:darkslategray;border-bottom-style:solid;}
+
+#divstyle2{text-align:center;}
+
+#divstyle3{position: relative;left:5%;}
+
+.divstyle4{
+    margin-left: 25%;
+    counter-reset: cnt;
+    counter-reset: cnt2;
+}
+
+.imgstyle1{width:100%;height:90%;}
+
+.h2style2{font-size: 2vw; text-align: center; font-family: 'Sofia';font-weight: 700;display: block; margin-top:1vw;margin-bottom:1vw;}
+
+.h2style22{font-size: 2vw; text-align: center; font-family: 'Sofia';font-weight: 700;}
+
+.h1style1{text-align: center;}
+
+span{display: block}
+
+.pstyle1{font-size:2vw;font-weight: 700;padding-top:0.3vw;padding-bottom:0.3vw;margin-top: 0.2vw}
+
+.pstyle2{font-size:1.4vw;font-weight: 500;margin-top: 0.5vw;margin-bottom: 0.5vw}
+
+dt:before{
+    counter-increment: cnt2; 
+    content: counter(cnt2) ") ";
+    counter-reset: cnt;
+}
+
+dd:before{
+    counter-increment: cnt;
+    content: "\00a0\00a0\00a0\00a0\00a0" counter(cnt, lower-roman) ") ";
+}
+
+table{
+    
+    margin-left: 14vw;
+    margin-bottom: 3vw;
+    font-size:1vw;
+    border-bottom: 0.1vw solid black;
+    border-top: 0.1vw solid black;
+    border-left: 0.1vw solid black;
+    border-right: 0.1vw solid black;
+    padding: 0;
+    text-align: center;
+}
+
+td, th{
+    font-size:1vw;
+    border-bottom: 0.1vw solid black;
+    border-top: 0.1vw solid black;
+    border-left: 0.1vw solid black;
+    border-right: 0.1vw solid black;
+    padding: 1em;
+    text-align: center;
+}
+
+table td:first-of-type{
+    text-align: left;
+}
+
+table{
+	border-spacing: 0;
+	border-collapse: separate;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+
+.h2style22{font-size: 2.5vw; text-align: center; font-family: 'Sofia';font-weight: 700;}
+    
+.h2style2{font-size: 2.5vw; text-align: center; font-family: 'Sofia';font-weight: 700;display: block; margin-top:1vw;margin-bottom:1vw;}
+
+.pstyle1{font-size:2vw;font-weight: 700;}
+
+.pstyle2{font-size:2vw;font-weight: 500;}
+    
+table{
+    width: 40vw;
+    margin-left: 25vw;
+    border: none;
+    border-collapse: collapse;
+}
+
+th, thead{
+    display: none;
+}
+
+td{
+    float:left;
+    width: 110%;
+    line-height: 1.4em;
+    border: 0.2vw solid black;
+    border-top: none;
+    font-size: 2.5vw;
+}    
+
+td:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8vw;
+    line-height: 1.6em;
+    color: red;
+    font-variant: small-caps;
+    border: 0.1vw solid black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    width: 113.5%;
+    background: linear-gradient(to bottom, azure, lightblue);
+}
+
+tfoot td:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    line-height: 1.6em;
+    color: blue;
+    font-variant: small-caps;
+    border: 0.1vw solid black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: 110%;
+    background: linear-gradient(to bottom, azure, lightblue);
+}
+    
+caption{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+td:nth-child(2)::before{
+    content: "Pret complet: ";
+    font-size: 2.5vw;
+}
+    
+td:nth-child(3)::before{
+    content: "Oferta discount 2 produse: ";
+    font-size: 2.5vw;
+}
+
+td:nth-child(4)::before{
+    content: "Oferta discount 'Vino cu un prienten!': ";
+    font-size: 2.5vw;
+}
+
+td:nth-child(5)::before{
+    content: "Discount de fidelitate: ";
+    font-size: 2.5vw;
+}
+
+td::before{
+    display: inline-block;
+    width: 70%;
+}   
+
+tr{
+    display: inline-block;
+    margin-top: 5vw;
+}
+
+tbody tr:nth-child(1){
+    margin-top: 0px;
+}
+    
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+
+.divstyle4{
+    margin-left: 15%;
+    counter-reset: cnt;
+    counter-reset: cnt2;
+}
+
+.h2style22{font-size: 5.5vw; text-align: center; font-family: 'Sofia';font-weight: 700;}
+    
+.h2style2{font-size: 6vw; text-align: center; font-family: 'Sofia';font-weight: 700;display: block; margin-top:1vw;margin-bottom:1vw;}
+
+.pstyle1{font-size:6vw;font-weight: 700;}
+
+.pstyle2{font-size:6vw;font-weight: 500;}
+    
+#butt{
+    position:relative;
+    background-color: darkslategray;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    width: 20%;
+    left: 34%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#butt:hover{
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+        
+table{
+    width: 40vw;
+    margin-left: 20vw;
+    border: none;
+    border-collapse: collapse;
+}
+
+th, thead{
+    display: none;
+}
+
+td{
+    float:left;
+    width: 110%;
+    line-height: 1.4em;
+    border: 0.2vw solid black;
+    border-top: none;
+    font-size: 5vw;
+}    
+
+td:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vw;
+    line-height: 1.6em;
+    color: red;
+    font-variant: small-caps;
+    border: 0.1vw solid black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    width: 110%;
+    background: linear-gradient(to bottom, azure, lightblue);
+}
+    
+tfoot td:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vw;
+    line-height: 1.6em;
+    color: blue;
+    font-variant: small-caps;
+    border: 0.1vw solid black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: 110%;
+    background: linear-gradient(to bottom, azure, lightblue);
+}
+
+caption{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+td:nth-child(2)::before{
+    content: "Pret complet: ";
+    font-size: 5vw;
+}
+    
+td:nth-child(3)::before{
+    content: "Oferta discount 2 produse: ";
+    font-size: 5vw;
+}
+
+td:nth-child(4)::before{
+    content: "Oferta discount 'Vino cu un prienten!': ";
+    font-size: 5vw;
+}
+
+td:nth-child(5)::before{
+    content: "Discount de fidelitate: ";
+    font-size: 5vw;
+}
+
+td::before{
+    display: inline-block;
+    width: 70%;
+}   
+
+tr{
+    display: inline-block;
+    margin-top: 5vw;
+}
+
+tbody tr:nth-child(1){
+    margin-top: 0px;
+}
+}
+
+@media print{
+    header nav, footer { display: none;}
+    img { max-width: 50%; }
+}

@@ -1,0 +1,8 @@
+#h1style1{text-align: center;}
+
+.h2style2{font-size: 2vw; text-align: center; font-family: 'Sofia';font-weight: 700;display: block; margin-top:1vw;margin-bottom:1vw;}
+
+@media print{
+    header nav, footer { display: none;}
+    img { max-width: 50%; }
+}
